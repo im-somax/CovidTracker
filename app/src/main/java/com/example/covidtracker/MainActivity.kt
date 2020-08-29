@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.widget.AbsListView
-import androidx.constraintlayout.widget.Constraints
+import androidx.work.*
 import com.google.gson.Gson
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.coroutines.*
@@ -78,6 +78,8 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    //design pattern
+    //GOF
     @InternalCoroutinesApi
     private fun initWorker() {
         val constraints = Constraints.Builder()
